@@ -19,15 +19,15 @@ Les noms de variables suivent les mêmes règles de nommage que les autres entit
 <pre>
     $lulu = 5;
     $lala = "yes";
-    $5main = 3;
-    $_____coucou = 7;
-    $bool = true;
-    $bool 2 = false;
-    $je-t-aime = "pas";
-    $ILoveYou = "me too";
-    $6-repos = 77;
-    $bon-homme = true;
-    $lkhjfgt5468sd58757 = 677;
+    $5main = 3; //non
+    $_____coucou = 7; //oui
+    $bool = true; //oui
+    $bool 2 = false; //oui
+    $je-t-aime = "pas"; //non
+    $ILoveYou = "me too"; //oui
+    $6-repos = 77;  // non
+    $bon-homme = true; // non
+    $lkhjfgt5468sd58757 = 677; // oui?
     $mabapta = $lulu;
 </pre>
 <hr>
@@ -40,6 +40,29 @@ Les noms de variables suivent les mêmes règles de nommage que les autres entit
     echo '$lala = ';
     echo "$lala <br>";
 
+    $_____coucou = 7;
+    echo '$_____coucou = ';
+    echo "$_____coucou <br>";
+
+    $bool = true;
+    echo '$bool = ';
+    echo "$bool <br>";
+
+    $bool2 = true;
+    echo '$bool2 = ';
+    echo "$bool2 <br>";
+
+    $ILoveYou = "me too";
+    echo '$ILoveYou =';
+    echo "$ILoveYou <br>";
+
+    $lkhjfgt5468sd58757 = 677;
+    echo '$lkhjfgt5468sd58757 = ';
+    echo "$lkhjfgt5468sd58757 <br>";
+
+    $mabapta = $lulu;
+    echo '$mabapta =';
+    echo "$mabapta <br>"
 
 ?>
 </body>
