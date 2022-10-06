@@ -68,9 +68,21 @@ echo 'mettre tout en majuscule : strtoupper($monTitre '.strtoupper($monTitre);
      var_dump($myFirstInt;$mySecondInt,$monTitre, $add, $sous,$multi,$div ); 
         
 ?>
-<h3> 
+<h3> Les chiffre  float (flottante , double , no réels )<h3>
+<p>ils ont le type float , meme attention en base 10 on peut avoir de erreurs du au fait que le ordinateurs travaille sur le calculc in base 16  , pour ca on utilise la base 16 pour le calcule . ATTENTION ON UTILISE . NU  , COMME SEPARATEUR <a href="https://floating-point-gui.be" target="_blank">What every programmer should know about floating-point arithmetic </p>
+  <?php
+  // pour calcule on peut utilise un function  gmp ( comme la Math ), exemple gmp.abs  ; meme sur le infinit c'est un probleme //
+     
+  $firstFloat=8.27 ; 
+  $secondFloat=79.78946312558819 ; // il manque 3 caractere  c'est de pasque le espace c'est insufisant 
 
-
+  // function bc math il vais grandir le mémoire  , exemple = bcadd = > il vais // 
+?>
+<h3>les boolean (bool ,boolean )<h3>
+    <p>Variable réprezentant sur une seul bit les 2 posibilite du binaire : true , false </p>
+<hr>
+<?php
+ 
 
 
 
