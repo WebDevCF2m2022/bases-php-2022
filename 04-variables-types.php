@@ -47,19 +47,22 @@ echo 'mettre tout en majuscule : strtoupper($monTitre '.strtoupper($monTitre);
         //adition
         $add=$myFirstInt + $mySecondInt ; 
         echo $add ; 
+        echo "<br>"; 
 
          //soustraction 
          $sous =$myFirstInt -$mySecondInt ; 
          echo $sous; 
+         echo "<br>" ; 
 
          // multiplication 
          $multi =$myFirstInt * $mySecondInt;
          echo $multi; 
+         echo "<br>"; 
 
          //division 
          $div =$myFirstInt / $mySecondInt ; 
          echo $div; 
-         
+         echo "<br>"; 
 
      // outile de débougage 
      var_dump($myFirstInt;$mySecondInt,$monTitre, $add, $sous,$multi,$div ); 
