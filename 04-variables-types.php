@@ -65,7 +65,7 @@ echo 'mettre tout en majuscule : strtoupper($monTitre '.strtoupper($monTitre);
          echo "<br>"; 
 
      // outile de débougage 
-     var_dump($myFirstInt;$mySecondInt,$monTitre, $add, $sous,$multi,$div ); 
+   
         
 ?>
 <h3> Les chiffre  float (flottante , double , no réels )<h3>
@@ -82,11 +82,45 @@ echo 'mettre tout en majuscule : strtoupper($monTitre '.strtoupper($monTitre);
     <p>Variable réprezentant sur une seul bit les 2 posibilite du binaire : true , false </p>
 <hr>
 <?php
- 
+  $bool1= true; 
+  $bool2=false; 
+
+?>
+<h3>Variable null <h3>
+<p>le type Null est un varaible sans valeurs , sans ocuppe l'espace dans memeoire </p>
+<?php
+ $nada =NULL;
+?>
+<h3> les tableaux (array) </h3>
+<p>Les tableaux permettent de contenir plusieurs  variables à l'interieur à l'intérieur d'un variable de type  array. Ils sont multidimensionnels , càd on peut avoir autant de tableaux que nécessaire dans un tableau 
+</p><p>Il existe 2 type de tableau :  les tableau indexés , et le tableau associatifs </p>
+
+<h3>tableau indexe</h3>
+<p>il ne contient que des valeurs,les clefs sont attribut par PHP</p> 
+<?php
+ $tab1 = array( 5,"lulu","Dupuis ",true); 
+ print_r($tab1);     // debogage de tab ou oj avec print_r , moins complect que la var_dump 
+ echo $tab1[1];     // on veu affchier la 2 eme index (clé)
+?>
+
+<h3> tableau associatif </p>
+<p>Tableau dont on a indique au mois 1 des cles , ce qui en fait un tableau associatif</p>
 
 
+<?php
+  $tab2=array( "un "=> 1 , 
+               "deux" =>2 , 
+               "trois" =>3, 
+               17=>"coucou", 
+               "lala ",
 
+); 
 
+print_r($tab2); 
+?>
 
+<?php
+  var_dump($myFirstInt,$mySecondInt,$monTitre, $add, $sous,$multi,$div,$bool1,$bool2,$firstFloat,$secondFloat,$nada); 
+?>
 </body>
 </html>
