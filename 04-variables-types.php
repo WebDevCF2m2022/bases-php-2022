@@ -24,5 +24,115 @@
     echo 'mettre tout en majuscule : strtoupper($monTitre) '.strtoupper($monTitre);
     ?>
     <p><a href="https://www.php.net/manual/fr/book.strings.php" target="_blank">string</a></p>
+    <h2>Les numériques</h2>
+    <p>Les numériques sont les variables les plus utilisées pour les calculs, il existe plusieurs sous-type de ceux-ci</p>
+    <h3>Les entiers (integer, int)</h3>
+    <p>Sont des entiers les nombres sans virgules, positifs comme négatifs</p>
+    <p>Les calculs de base se font avec les signes + - */</p>
+
+    <?php
+
+    $myFirstInt = 22;
+    $mySecondInt = -7;
+
+    echo $myFirstInt;
+    echo "<br>";
+
+    // Addition
+    $add = $myFirstInt + $mySecondInt;
+    echo $add;
+    echo "<br>";
+
+    // Soustraction
+    $sous = $myFirstInt;
+    echo $sous;
+    echo "<br>";
+
+    // Mulitplication 
+    $multi = $myFirstInt * $mySecondInt;
+    echo $multi;
+    echo "<br>";
+
+    // Division
+    $div = $myFirstInt / $mySecondInt;
+    echo $div;
+    echo "<br>";
+
+    ?>
+
+    <h3>Les chiffres à virgule (float, double, nombres réels)</h3>
+    <p>Ils ont le type float, attention en cas de calcul en base 10, on peut avoir des erreurs du au fait que les ordinateurs travaillent sur les calculs en base 16</br> !!! On utilise le "." et pas la "," comme séparateur !</p>
+    <a href="https://floating-point-gui.de/" target = "_blank"> ICI UN SITE AVEC INFO</a>
+
+    <?php
+
+    $firstFloat = 8.27;
+    $secondFloat = -790789435185755468; // Il manque 3 caractères
+
+    ?>
+
+    <h2>Les booléens (bool, boolean)</h2>
+    <p>Variable représentant sur un seul bit les 2 posibilités du binaire: true ou false</p>
+
+    <?php
+
+    $bool1 = true;
+    $bool2 = false;
+
+    ?>
+
+    <h2>Les type NULL (NULL)</h2>
+    <p>Le type NULL est une variable sans valeurs</p>
+
+    <?php
+
+    $nada = NULL;
+
+    ?>
+
+    <h2>Les type tableaux (array)</h2>
+    <p>Les tableaux permettent de contenir plusieurs variables à l'interieur d'une variable de type array. Ils sont multidimentionnels, c'est à dire on peut avoir autant de tableaux que néccesaire dans un tableau.</p><p>Il existe 2 types de tableaux : les tableaux indexés, et les tableaux associatifs</p>
+    <h3>Tableau indexé</h3>
+    <p>Il ne contient que des valeurs, les clefs sont attribuées par PHP</p>
+
+    <?php
+
+    // Création d'un tableau indexé
+    $tab1 = array(5,"Lulu","Dupuis",true);
+    // Débogage de tableaux ou objets avec print_r, moins complet que le var_dump
+    print_r($tab1);
+    // On veut afficher la 2ème clef
+    echo $tab1[1];
+
+    ?>
+
+    <h3>Tableau associatif</h3>
+    <p>Tableau dont on a indiqué au moins 1 des clefs, ce qui en fait un tableau associatif</p>
+
+    <?php
+
+    // Création d'un tableau associatif 
+    $tab2 = array("un"=> 1,
+                    "deux"=>2,
+                    "trois"=>3,
+                    4 =>"coucou",
+                    "lala",
+                    array (1,2,3),
+                 );
+    // Débogage de tableaux ou objets avec print_r, moins complet que le var_dump
+    print_r($tab2);
+    echo $tab2["deux"];
+
+    ?>
+
+    <hr>
+
+    <?php
+    // outil de débogage commun
+    var_dump($myFirstInt, $mySecondInt, $sous, $multi, $add, $div, $firstFloat, $secondFloat, $bool1, $bool2, $nada, $tab1, $tab2);
+
+    // outil de débogage plus 
+    ?>
+    
 </body>
 </html>
