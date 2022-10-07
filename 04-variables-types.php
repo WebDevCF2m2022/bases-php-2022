@@ -99,7 +99,7 @@ echo 'mettre tout en majuscule : strtoupper($monTitre '.strtoupper($monTitre);
 <p>il ne contient que des valeurs,les clefs sont attribut par PHP</p> 
 <?php
  $tab1 = array( 5,"lulu","Dupuis ",true); 
- print_r($tab1);     // debogage de tab ou oj avec print_r , moins complect que la var_dump 
+ print_r($tab1);     // débogage de tab ou oj avec print_r , moins complect que la var_dump 
  echo $tab1[1];     // on veu affchier la 2 eme index (clé)
 ?>
 
