@@ -64,9 +64,26 @@
 </pre>
 <?php
  
-
+  //afficher moi tous les impaires entre 0 et 1000 separe par un espace 
    
 for($i=100 ;$i>=0 ;$i--){
+    echo "$i "; 
+
+}
+echo "<br>" ; 
+
+  //afficher moi tous les impaires entre 2 et 1000 sépare pour un espace 
+
+
+  for($i=2 ;$i<=1000 ;$i+=2){
+    echo "$i "; 
+
+}
+
+echo "<br>"; 
+//affichez-moi tous les impaires entre 1 et -99 sépares par un espace 
+ 
+for($i=1 ;$i>=-99 ;$i-=2){
     echo "$i "; 
 
 }
