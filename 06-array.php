@@ -69,5 +69,26 @@ coucou, vous allez bien?
 Yes, je vais bien!
 
 </code></pre>
+<h3>V1</h3>
+
+
+
+<h2>Le tableau associatif</h2>
+<p>La principale différence avec le tableau indexé, c'est qu'on modifie au moins une clef - avec un numéique ou un string.</p>
+<p>A partir du moment où on a un tableau associatif, on ne sait plus faire mathematiquement ce qu'on faisait (puisque on ne demarre plus forcement a 0 1 2 3 4 etc)</p>
+
+<?php
+$tab = array (2 => "un", "deux", "trois");
+var_dump($tab);
+$tabAssoc = [
+    "id"=>29,
+    "prenom"=>"yanis",
+    "nom"=> "Goodlife",
+    "mail"=>"mail@mail.com",
+];
+
+
+var_dump($tabAssoc);
+?>
 </body>
 </html>
