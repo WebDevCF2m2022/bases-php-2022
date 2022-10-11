@@ -18,6 +18,6 @@
 
     // affiche la ligne : echo "text" ; 
     echo "<h1>Hello World</h1>";
-   // fermeture de PHP ?>
+    // fermeture de PHP ?>
 </body>
 </html>

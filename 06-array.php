@@ -18,8 +18,10 @@ $tab = [
         ],
     ],
 ];
-
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,9 +30,11 @@ $tab = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Array</title>
 </head>
+
 <body>
     <h1>Array</h1>
-    <p>Les tableaux sont la base de gestion des données en PHP comme dans la plupart des langages, on pourra également utiliser des objets, des fichier json ou xml pour faire la même chose, mais en PHP le tableau restera le principal format pour gérer toutes les données</p>
+    <p>Les tableaux sont la base de gestion des données en PHP comme dans la plupart des langages. On pourra également utiliser des objets, des fichier json ou xml pour faire la même chose, mais en PHP le tableau restera le principal format pour gérer toutes les données</p>
+    <br>
     <p>En PHP on a 2 manières de créer des tableaux : </p>
     <pre><code>
 $tab = array(); // manière longue
