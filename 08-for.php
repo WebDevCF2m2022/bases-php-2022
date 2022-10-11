@@ -58,6 +58,7 @@ echo $1--; //2 car il affiche le $i avant de faire la décrémentation
 echo $i;  //1 car a effectué la décrémentation de la ligne précédente
 echo --$i;  //0 car la décrémentation se fait avant l'affichage
 </code></pre>
+
 </body>
 </html>
 
