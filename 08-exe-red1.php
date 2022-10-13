@@ -8,9 +8,22 @@
 </head>
 <body>
     <?php
-   for ($i = 100; $i >= 1; $i--) {
+   for ($i = 100; $i >= 0; $i--) {
     echo $i."<br>";
 }
     ?>
+    <hr>
+    <?php
+    for ($i = 2; $i <= 1000; $i+=2) {
+     echo $i."<br>";
+ }
+?>
+<hr>
+<?php
+     for ($i = 1; $i >= -99; $i-=2) {
+    echo $i."<br>";
+}
+
+?>
 </body>
 </html>
