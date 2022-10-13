@@ -51,6 +51,32 @@ echo $i--; // 2 car affiche $i avant de diminuer de 1
 echo $i // 1
 echo --$i; // 0 car la décrémentation se fait avant l'affichage
 </code></pre>
+<?php
+//affichez les chiffres de 100 à 0 séparé par un espace
+for($i=100; $i >= 0; $i--){
+    echo "$i ";
+}
+?>
+<br>
+<hr>
+<?php
+
+//affichez moi tout les paires entre 2 et 1000 séparé par un espace
+
+for($i= 2; $i<=1000; $i+=2){
+    echo "$i ";
+}
+?>
+<br>
+<hr>
+<?php
+// affichez moi tout les impaires entre 1 et -99 séparés par un espace
+for($i= 1; $i>=-99; $i-=2){
+    echo "$i ";
+}
+
+?>
+
 
 </body>
 </html>
