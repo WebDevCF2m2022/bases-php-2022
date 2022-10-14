@@ -42,7 +42,7 @@ $nb3 = 100;
     <h1>Exercices sur les boucles</h1>
     <p>Créez dans ce dossier un fichier exe-11-{prénom}.php en copiant celui-ci</p>
     <?php
-
+    
     ?>
     <h3>Exe 1</h3>
     <p>Affichez tous les noms de la variable $stagiaires séparés par un " | "</p>
