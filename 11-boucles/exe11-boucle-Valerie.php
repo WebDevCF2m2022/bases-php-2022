@@ -80,6 +80,9 @@ $nb3 = 100;
     <?php
     $hasard = mt_rand(0,17);
     
+    for($i=0; $i<=$hasard; $i++){
+        echo "$i ";
+   }
     ?>
     
     
