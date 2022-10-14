@@ -47,25 +47,40 @@ $nb3 = 100;
     <h3>Exe 1</h3>
     <p>Affichez tous les noms de la variable $stagiaires séparés par un " | "</p>
     <?php
-
+    foreach($stagiaires as $value){
+        echo "$value | ";
+     }
     ?>
     <h3>Exe 2</h3>
     <p>Affichez tous les noms de la variable $stagiaires séparés par un " | " avec leur clef: exemple <code>0 -> Redouan | 1 -> Coralie ...</code></p>
     <?php
-
+    foreach($stagiaires as $key => $value){
+        echo "$key -> $value | ";
+    }
     ?>
     <h3>Exe 3</h3>
     <p>Voir la doc sur les tableaux : Affichez tous les noms de la variable $stagiaires classés par ordre alphabétique séparés par un " | "</p>
     <?php
-
+    sort($stagiaires);
+    foreach($stagiaires as $value){
+    echo"$value | ";
+    }
     ?>
     <h4>Exe 4 </h4>
     <p>Affichez les chiffres de 0 à la valeur de la variable $hasard (entiers positif : 0, 1, 2, 3, ...) séparés par des ,</p>
     <?php
+    for($i=0; $i<=$hasard; $i++){
+        echo "$i |";
+   }
     ?>
     <h4>Exe 5 </h4>
     <p>faites une boucle allant de $nb3 à $nb1 en diminuant la valeur de 3 (100, 97, 94 etc...) séparés par des virgules</p>
     <?php
+    $nb1 = -100;
+    $nb3 = 100;
+    for($i=$nb3;$i>=$nb1;$i-=3){
+        echo "$i, ";
+    }
     ?>
 </body>
 </html>
