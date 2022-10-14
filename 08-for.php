@@ -33,8 +33,7 @@ for($i=1; $i <= 200; $i++){
 ?>
 <h3>Incrémentation de plus de 1</h3>
 <p>Si on veut incrémenter d'un autre chiffre que 1, l'utilisation du += est le plus courant</p>
-<?php
-for($i= -10; $i<=10; $i+=2){
+<?php  $i+=2){
     echo "$i ";
 }
 ?>
