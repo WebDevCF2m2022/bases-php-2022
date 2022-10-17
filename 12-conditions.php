@@ -41,10 +41,35 @@
             if (isset ($nombre)&&$nombre>5 && $nombre <15){
                 echo "$nombre existe ET est plus grand que 5 ET est plus petit que 15";
             }
+            ?>
             
-            ?>   
+        <h2>else - SINON</h2>
+            <p>C'est l'exécution du code si jamais le if est false.</p>
             
-
+            <?php 
+            $temp = mt_rand(-20, 20);
+            echo "<h4>Il fait $temp ° dehors</h4>";
+            if ($temp<=0){
+                echo "il gèle dehors à $temp °";
+            }else{  //il n'est pas nécessaire de réécrire tout
+                echo "il ne gèle pas pour le moment";
+            }        
+            ?>
+            
+        <h2>elseif - else if - SINON SI</h2>
+            <p>C'est l'exécution d'une vérification supplémentaire si jamais le if (pu autre elseif) qui précède est false.</p>
+            
+            <?php 
+            if($temp <= -10){
+                echo "il fait très froid dehors.";
+            }elseif($temp <=0){
+                echo "il fait froid dehors.";
+            }elseif($temp <=12){
+                echo "il fait frisquet";
+            }else{    //le else n'est pas obligatoire, comme en JS
+                echo "il fait agréable";
+            }
+            ?>
 
 
 
