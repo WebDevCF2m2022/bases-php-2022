@@ -5,6 +5,11 @@ if(isset($_POST['first'],$_POST['choix'],$_POST['second'],)){
 
     // vérification des champs (!! on ne peut pas diviser par 0)
 }
+$nb1 =($_POST['first']);
+$choix =($_POST['choix']);
+$nb2=($_POST['second']);
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,6 +44,8 @@ Envoyez-moi le git pull request sur notre dépôt de la classe</p>
     <hr>
     <?php
     var_dump($_POST);
+  
+
     ?>
 </body>
 </html>
