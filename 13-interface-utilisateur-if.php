@@ -53,6 +53,7 @@ if(isset($_POST['temperature']) && is_numeric($_POST['temperature'])){
     if(isset($response)&& !empty($response)){
         echo "$response";
     }
+    
     ?>
 </body>
 </html>
