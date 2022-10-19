@@ -16,13 +16,13 @@
         $i++;
     }
     $i=0;
-    // le do while va afficher le 0 malgré que la condition ne soit pas remplie.
+    // le do while va afficher le 0 bien que la condition ne soit pas remplie.
     do{
         echo "$i ";
     }while($i>0 && $i<=10);
 
     echo "<hr>";
-    // ici le code est éxécuté 1 x, on affiche le 0, puis on met cette valeur à 1, elle rentre donc dans la condition et le while tourne jusqu'à 10
+    // ici le code est éxécuté 1 x, on affiche le 0, puis on met cette valeur à 1. Du coup, elle rentre donc dans la condition et le while va alors tourner jusqu'à 10.
     $i=0;
     do{
         echo "$i ";

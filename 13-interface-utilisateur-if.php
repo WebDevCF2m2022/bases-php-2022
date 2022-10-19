@@ -2,23 +2,26 @@
 //débogage de la variable superglobale POST
 // var_dump($_POST);
 
-// on vérifie toujours l'existance (initialisation not null) d'une variable avec isset suivi d'un && si on veut vérifier son type ou sa valeur
-if(isset($lala) && is_numeric($lala)){
+// on vérifie toujours l'existence (initialisation not null) d'une variable avec isset suivi d'un && si on veut vérifier son type ou sa valeur
+if(isset($lala) && is_numeric($lala)){   
     echo $lala;
-}
+}   //si variable lala est définie ET qu'elle est un numérique ("is a numeric"). On met le is_numeric après le isset car si on le met en premier mais que ce n'est pas un numérique, le if ne vérifiera même pas si le isset est true ou false - or c'est une partie de ce qui doit être vérifier.
 
-// si il existe la variable $_POST nommée temperature (utilisation de isset) - Dans notre cas? $_POST['temperature'] existe si on a envoyé le formulaire ET qu'elle contient effectivement du numérique !
+
+
+
+// s'il existe la variable $_POST nommée temperature (utilisation de isset) - Dans notre cas: $_POST['temperature'] existe si on a envoyé le formulaire ET qu'elle contient effectivement du numérique.
 if(isset($_POST['temperature']) && is_numeric($_POST['temperature'])){
     
-    // on va créer une variable temporaire locale, et changer le typage de notre variable en entier en utilisant (int) pour integer, si ça fonctionne ça nous donne un numérique, en cas d'échec ça nous donne le numérique 0
+    // on va créer une variable temporaire locale et changer le typage de notre variable en entier en utilisant (int) pour integer. Si ça fonctionne, cela nous donnera un numérique. En cas d'échec, cela nous donnera le numérique 0.
     $temp = (int) $_POST['temperature'];
-    // autre methode permettant de converstir en int, en cas d'échec settype renvoie false, true en cas de réussite : c'est $_POST['temperature'] qui est transformée en int
+    // autre méthode permettant de convertir en int. En cas d'échec settype renvoie false, true en cas de réussite : c'est $_POST['temperature'] qui est transformée en int.
     // $temp2 = settype($_POST['temperature'],"integer");
 
     // initialisation de notre variable de réponse (Pour la vue)
     $response = "<h3>";
 
-    // si la température est plus petit ou égale à 0
+    // si la température est plus petite ou égale à 0
     if($temp<=0){
         // concaténation avec .= // les {$temp}° permettent que la variable ne soit pas confondue avec une autre avariable $temp°
         $response .= "L'eau est à l'état solide à {$temp}°";
@@ -30,7 +33,7 @@ if(isset($_POST['temperature']) && is_numeric($_POST['temperature'])){
 
     $response .= "</h3>";
     
-}
+} 
 
 ?>
 <!DOCTYPE html>
@@ -49,7 +52,7 @@ if(isset($_POST['temperature']) && is_numeric($_POST['temperature'])){
         <input type="submit" value="Envoyer">
     </form>
     <?php
-    // Si la variable $response existe et qu'elle n'est pas (!) vide (empty)
+    // Si la variable $response existe et qu'elle n'est pas (!) vide (empty)   -->utilisation de la condition !
     if(isset($response)&& !empty($response)){
         echo "$response";
     }

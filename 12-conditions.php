@@ -16,21 +16,28 @@
 }
     </code></pre>
 <?php
-$nombre = mt_rand(0,20);
+$nombre = mt_rand(0,20);    //math random
 // si $nombre est plus petit que 10 affichez le entre "$nombre est plus petit que 10"
 if($nombre<10){
     echo "$nombre est plus petit que 10";
 }
 ?>
-<p>Une condition peut être complexe, et donc utiliser les && (et - AND), ||(ou - OR), ! (contraire de ) et XOR (^ ou stricte) voir <a href="https://www.php.net/manual/fr/language.operators.logical.php" target="_blank">opérateurs logiques</a></p>
+<p>Une condition peut être complexe, et donc utiliser 
+    - les && (et - AND), 
+    - ||(ou - OR)  <!--si j'ai 3 $, il sufffit qu'une seule des 3 soit true pour que ma condition soit remplie-->, 
+    - ! (contraire de ), et 
+    - XOR (ou stricte).<br>
+Voir: <a href="https://www.php.net/manual/fr/language.operators.logical.php" target="_blank">les opérateurs logiques</a></p>
 <?php
-// si la variable est initialisée (isset) (ici $nombre existe)
-if(isset($nombre)&& $nombre>5 && $nombre < 15){
+// si la variable est initialisée (isset) (ici $nombre existe)   ---   isset signifie littéralement "is set" donc "est initialisée" en anglais
+if(isset($nombre)&& $nombre>5 && $nombre < 15){   // si la variable nombre est initialisée ET que la variable est plus petite que 5 et est plus grande que 15, alors  --> echo
     echo "$nombre existe ET est plus grand que 5 ET est plus petit que 15";
 }
 ?>
+
+
 <h2>else - SINON</h2>
-    <p>C'est l'exécution de code si jamais le if qui précède est à false</p>
+    <p>C'est l'exécution de code si jamais le if qui précède est false</p>
 <?php
 $temp = mt_rand(-20,20);
 echo "<h4>Il fait $temp ° dehors</h4>";
@@ -40,8 +47,10 @@ if($temp <= 0){
     echo "Il ne gèle pas pour le moment";
 }
 ?>
+
+
 <h2>elseif - else if - SINON SI</h2>
-    <p>C'est l'exécution d'une vérification supplémentaire si jamais le if (ou autre elseif) qui précède est à false</p>
+    <p>C'est l'exécution d'une vérification supplémentaire si jamais le if (ou autre elseif) qui précède est false</p>
 <?php
 if($temp <= -10){
     echo "Il fait très froid dehors.";
