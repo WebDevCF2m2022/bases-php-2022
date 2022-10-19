@@ -25,16 +25,18 @@
    
     <hr>
     <?php
-    $first=$_POST['first'];
-    $choix=$_POST['choix'];
-    $second=$_POST['second'];
     
-    if (isset($_POST['first'],$_POST['choix'],$_POST['second'])){
+    
+    if (isset($_POST['first'],$_POST['choix'],$_POST['second']) && is_numeric($_POST['first']) && is_numeric($_POST['second'])){
         
-        if ($choix=== '/' && $second===0){
+        $first=$_POST['first'];
+        $choix=$_POST['choix'];
+        $second=$_POST['second'];
+
+        if ($choix=== '/' && $second== 0){
            
-         $reponse= "Impossible";
-         echo $reponse; // Problème avec le echo il ne s'affiche pas et je vois pas le problème sorry 
+         $reponse= null;
+         echo "IMPOSSIBLE"; // Problème avec le echo il ne s'affiche pas et je vois pas le problème sorry 
         }
         elseif ($choix=="+"){
            $reponse= $first+$second;
@@ -49,11 +51,16 @@
             echo "la reponse est".$reponse;
         }
         
-        }
         elseif ($choix=="/"){
             $reponse= $first/$second;
             echo "la reponse est".$reponse;
+            
         }
+    }
+        else{
+            echo "Il nous faut des valeurs numérique!";
+        }
+
         
     
     ?>
@@ -65,6 +72,7 @@
     if(isset($reponse)):
         echo $reponse;
     endif;
+
     ?>
 </body>
 </html>
