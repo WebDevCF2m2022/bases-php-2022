@@ -23,7 +23,7 @@ if(isset($_POST['temperature']) && is_numeric($_POST['temperature'])){
 
     // si la température est plus petite ou égale à 0
     if($temp<=0){
-        // concaténation avec .= // les {$temp}° permettent que la variable ne soit pas confondue avec une autre avariable $temp°
+        // concaténation avec .= // les {$temp}° permettent que la variable ne soit pas confondue avec une autre variable $temp°
         $response .= "L'eau est à l'état solide à {$temp}°";
     }elseif($temp<100){
         $response .= "L'eau est à l'état liquide à {$temp}°";
