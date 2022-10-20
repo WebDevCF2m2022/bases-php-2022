@@ -65,7 +65,7 @@ if(isset($_POST['first'],$_POST['choix'],$_POST['second'],)){
             }
         }
         }
-    else 
+    else   
     {
     echo 'Veuillez renseigner tous les champs.';
     }
