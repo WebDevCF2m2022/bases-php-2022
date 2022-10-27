@@ -1,5 +1,7 @@
 <?php
 
+include 'menu.php';
+
 require_once 'configuration.php';
 
 if (isset($_GET['u'])) {
@@ -19,3 +21,6 @@ if (isset($_GET['u'])) {
 } else {
     include './pages/homepage.php';
 }
+
+
+include 'footer.php';

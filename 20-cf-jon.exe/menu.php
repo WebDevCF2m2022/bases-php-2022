@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Accueil 20</title>
     <link rel="stylesheet" href="css/myCSS.css">
 </head>
+
 <body>
     <h1>Accueil 20</h1>
     <ul class="nav">
