@@ -60,7 +60,8 @@ yes, je vais bien!
 
 <strong>Dans un fichier nommé 06-exe2-{prenom}.php</strong>
 
-<strong>Et pour ceux pour qui c'est facile, je veux obtenir:</strong>
+<strong>Et p
+    our ceux pour qui c'est facile, je veux obtenir:</strong>
 
 Coucou, vous allez bien? 
 Yes, je vais bien!
