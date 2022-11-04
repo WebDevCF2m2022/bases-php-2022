@@ -1,5 +1,6 @@
 <?php
 include "22-functions.php";
+var_dump($_POST);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,18 +18,19 @@ include "22-functions.php";
     <p>Bonus, changez la fonction pour afficher par exemple :<br> 25/5 = 5</p>
    
     <form method="post" action="">
-            <input type="text" name="num1" required>
-            <input type="submit" name="op" value="+">
-            <input type="submit" name="op" value="-">
-            <input type="submit" name="op" value="*">
-            <input type="submit" name="op" value="/">
-            <input type="text" name="num2" required>
-            <input type="submit" value="Calculer"><br>
+            <input type="text" name="num1">
+            <select name="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/" selected>/</option>
+            </select>
+            <input type="text" name="num2">
+            <input type="submit" value="Calculer!">
+            <br>
             <br>Réponse :<input type='text' value="<?php if(isset($_POST['num1'],$_POST['num2'],$_POST['op'])){ echo calculBasic($_POST['num1'],$_POST['num2'],$_POST['op']);}?>"><br>
 
     </form>
-    <?php
-    var_dump($_POST);
-    ?>
+
 </body>
 </html>
