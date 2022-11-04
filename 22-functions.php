@@ -20,4 +20,6 @@ function calculBasic($num1, $num2, $op = "+"){
         default:
             return $num1+$num2;
     }
+  
 }
+calculBasic(25,5,'/'); 
