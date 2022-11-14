@@ -11,6 +11,7 @@
     <?php include 'include/inc.header.php'?>
     <?php include 'include/inc.menu.php'?>
     
+    <h1>petite intro</h1>
     
     <p>un debut</p>
 </body>
