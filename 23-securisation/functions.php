@@ -39,7 +39,7 @@ function calculBasicWithInstruction($num1, $num2, $op = "+"){
             // si division par 0 affichage de l'erreur et arrêt du script
             if($num2==0) return "Division par 0 interdite";
             return $num1." ".$op." ".$num2." = ".($num1/$num2);
-            break;
+           // break;
         default:
             return "$num1 $op $num2 = ".($num1+$num2);
     }

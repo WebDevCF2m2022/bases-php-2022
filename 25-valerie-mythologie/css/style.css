@@ -1,0 +1,9 @@
+*{
+    box-sizing:border-box;
+}
+
+html{
+    min-width: 100%;
+    display: flex;
+}
+
