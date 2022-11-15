@@ -13,5 +13,9 @@
 
     
     <p>pour m'entrainer</p>
+
+    <?php include 'include/inc.footer.php'?>
+
+    
 </body>
 </html>

@@ -12,5 +12,9 @@
     <?php include 'include/inc.menu.php'?>
     
     <p>on se fait plaisir</p>
+
+    <?php include 'include/inc.footer.php'?>
+
+    
 </body>
 </html>

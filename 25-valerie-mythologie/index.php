@@ -4,6 +4,9 @@
 if(isset($_GET['vue'])){
 
     switch ($_GET['vue']){
+        case 'introduction':
+            include "pg/introduction.php";
+            break;
         case 'concepts':
             include "pg/concepts.php";
             break;

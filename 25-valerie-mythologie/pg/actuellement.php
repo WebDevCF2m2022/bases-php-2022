@@ -12,5 +12,9 @@
     <?php include 'include/inc.menu.php'?>
     
     <p>nouveaux cultes et incultes</p>
+
+    <?php include 'include/inc.footer.php'?>
+
+    
 </body>
 </html>
