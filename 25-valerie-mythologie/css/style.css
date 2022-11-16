@@ -5,5 +5,9 @@
 html{
     min-width: 100%;
     display: flex;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    
 }
 

@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-pages.css">
 
     <title>Gallery</title>
 
@@ -16,12 +18,14 @@
 
 </head>
 <body>
+<?php include 'include/inc.header.php'?>
+    <?php include 'include/inc.menu.php'?>
 
 <div class="container gallery-container">
 
-    <h1>Bootstrap 3 Gallery</h1>
+    <h1>Gallery</h1>
 
-    <p class="page-description text-center">Grid Layout With Zoom Effect</p>
+    <p class="page-description text-center">Photos Gallery</p>
     
     <div class="tz-gallery">
 
@@ -81,5 +85,8 @@
 <script>
     baguetteBox.run('.tz-gallery');
 </script>
+
+<?php include 'include/inc.footer.php'?>
+
 </body>
 </html>
