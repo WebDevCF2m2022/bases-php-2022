@@ -10,7 +10,7 @@ if(isset($_GET['vue'])){
         case 'concepts':
             include "pg/concepts.php";
             break;
-        case include 'use':
+        case 'use':
             include "pg/use.php";
             break;
         case 'dieux':
