@@ -1,7 +1,6 @@
 <?php
 // Nos paramètres de connexion
 require_once "config.php";
-include 'functions-jon.php';
 
 // Notre connexion    
 try {
@@ -58,7 +57,7 @@ else:
 
         // affichage des pays par ordre alphabétique
     ?>
-    <p><?=$item['nom']?> - <?= perMillion($item['population']) ?></p>
+    <p><?=$item['nom']?> - <?=$item['population']?></p>
     <?php
     // fin de boucle
     endwhile;

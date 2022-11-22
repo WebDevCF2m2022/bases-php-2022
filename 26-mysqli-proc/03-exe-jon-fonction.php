@@ -58,7 +58,7 @@ else:
 
         // affichage des pays par ordre alphabétique
     ?>
-    <p><?=$item['nom']?> - <?= perMillion($item['population']) ?></p>
+    <p><?=$item['nom']?> - <?=perMillion($item['population'])?></p>
     <?php
     // fin de boucle
     endwhile;
