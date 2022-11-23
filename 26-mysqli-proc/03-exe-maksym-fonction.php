@@ -1,7 +1,7 @@
 <?php
 // Nos paramètres de connexion
 require_once "config.php";
-
+include "functions-maksym.php";
 // Notre connexion    
 try {
     // connexion à la DB mysql "statistiques"
@@ -43,7 +43,7 @@ $nbPays = mysqli_num_rows($query);
     <h2>Nombre de pays <?=$nbPays?></h2>
     <?php
 // si on a pas récupéré de pays (écriture sans {} dans l'html) 
-if(empty($nbPays)) :
+if(empty($nbPays)) : 
 
     // affichage de l'erreur sans utiliser echo (pratique pour un designe externe)
     ?>

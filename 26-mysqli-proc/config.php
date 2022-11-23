@@ -6,4 +6,4 @@ const DB_LOGIN = "root";
 const DB_PWD = "";
 const DB_NAME = "statistiques";
 const DB_PORT = 3306;
-const DB_CHARSET = "utf8";
+const DB_CHARSET = "utf8mb4";
