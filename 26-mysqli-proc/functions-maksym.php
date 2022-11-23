@@ -22,5 +22,3 @@ echo perMillion('85959');
 
 ?>
 <br><br>
-    return "";
-}
