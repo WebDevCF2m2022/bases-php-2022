@@ -18,6 +18,12 @@
     var_dump($_POST);
     if(isset($_POST['aPassword'])):
     ?>
+	<h2>uniqid()</h2>
+	<p>Avec préfixe et true</p>
+	<p><?php
+    echo uniqid('pre',true);
+    ?></p>
+	
     <h2>MD5</h2>
     <p>à ne plus utiliser, trop rapide et donc peu sécurisé (déjà cassé)</p>
     <p><?php
